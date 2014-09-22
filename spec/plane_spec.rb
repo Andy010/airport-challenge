@@ -13,8 +13,5 @@ describe Plane do
 		plane.land!
 		expect(plane.land!).to be true
 	end
-	
-
-
 
 end
