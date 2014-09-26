@@ -1,15 +1,15 @@
-class Weather
+module Weather
 
-	def snow!
-		true
+	def weather_stormy?
+		rand(1..10) == (8 || 9 || 10)
 	end
 
-	def sunny!
-		true
+	def sunny?
+		 return :sunny if weather_stormy == false
 	end
 
-	def rain!
-		true
+	def stormy?
+		return :stormy if weather_stormy == true 
 	end
-	
+
 end
